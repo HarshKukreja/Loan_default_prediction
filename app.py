@@ -83,9 +83,9 @@ def main():
     if st.button("Predict"):
         result = prediction(annual_inc, dti, earliest_cr_line, emp_length, installment, int_rate, pub_rec_bankruptcies, revol_bal, revol_util,total_acc, issue_year, delinq_2yrs, fico_avg, application_type_Joint_App, home_ownership_OWN, home_ownership_RENT,purpose_home_improvement, purpose_small_business, term_60_months, region_NorthEast, region_West, purpose_g_life_event)
         if result[0] == 0:
-            st.success('Model prediction: The applicant will not defualt on the loan')
+            st.success('Model prediction: The applicant will not default on the loan')
         else:
-            st.success('Model prediction: The applicant will defualt on the loan')
+            st.success('Model prediction: The applicant will default on the loan')
     
     
 if __name__=='__main__':
